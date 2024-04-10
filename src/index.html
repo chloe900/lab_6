@@ -41,7 +41,7 @@
     <script>
         (async function() {
             const { text } = await( await fetch(`/api/message`)).json();
-            document.querySelector('#name').textContent = text;
+            document.querySelector('#make').textContent = text;
         }());
     </script>
 
