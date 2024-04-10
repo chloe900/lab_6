@@ -1,0 +1,20 @@
+[
+    {
+        "make": "Toyota",
+        "model": "Camry",
+        "year": 2022,
+        "price": 250000
+    },
+    {
+        "make": "Audi",
+        "model": "A1",
+        "year": 2021,
+        "price": 2000000
+    },
+    {
+        "make": "Suzuki",
+        "model": "Celerio",
+        "year": 2020,
+        "price": 160000
+    }
+]
