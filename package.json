@@ -10,7 +10,8 @@
     "sirv-cli": "^2.0.2"
   },
   "dependencies": {
-    "cors": "^2.8.5"
+    "cors": "^2.8.5",
+    "express": "^4.19.2"
   }
 
   
