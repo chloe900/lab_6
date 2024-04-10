@@ -8,6 +8,11 @@ app.use(express.json());
 
 const cars = require('../cars.json');
 
+const cors = require('cors');
+
+// Use CORS middleware
+app.use(cors());
+
 //get all cars
 app.get('/cars', (req, res) => {
     res.json(cars);

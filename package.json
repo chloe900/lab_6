@@ -2,9 +2,18 @@
   "name": "vanilla-basic",
   "version": "1.0.0",
   "scripts": {
-    "start": "sirv ./src public --cors --single --no-clear --port 8000"
+    "start": "node server.js"
   },
+  
   "devDependencies": {
-    "@azure/static-web-apps-cli": "^1.1.7"
+    "@azure/static-web-apps-cli": "^1.1.7",
+    "sirv-cli": "^2.0.2"
+  },
+  "dependencies": {
+    "cors": "^2.8.5"
   }
+
+  
+
+  
 }

@@ -40,7 +40,7 @@
 
     <script>
         (async function() {
-            const { text } = await( await fetch(`/api/message`)).json();
+            const text = "The api works";
             document.querySelector('#make').textContent = text;
         }());
     </script>
