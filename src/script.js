@@ -3,7 +3,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const carList = document.getElementById('carList');
     cars = [];
     loadCarsBtn.addEventListener('click', () => {
-        fetch('/cars')
+        fetch('https://gentle-glacier-081148700.5.azurestaticapps.net/cars')
             .then(response => response.json())
             .then(data => {
                 cars = data;
@@ -28,7 +28,7 @@ document.addEventListener('DOMContentLoaded', () => {
     });
 });
 function addCar(newCar) {
-    fetch('/cars', {
+    fetch('http://localhost:3001/cars', {
         method: 'POST',
         headers: {
             'Content-Type': 'application/json'
