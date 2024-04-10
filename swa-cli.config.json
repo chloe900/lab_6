@@ -1,0 +1,15 @@
+{
+  "$schema": "https://aka.ms/azure/static-web-apps-cli/schema",
+  "configurations": {
+    "lab-6": {
+      "appLocation": "src",
+      "apiLocation": "api",
+      "outputLocation": ".",
+      "apiLanguage": "node",
+      "apiVersion": "16",
+      "apiBuildCommand": "npm run build --if-present",
+      "appName": "lab-6",
+      "resourceGroup": "lab-6-rg"
+    }
+  }
+}
