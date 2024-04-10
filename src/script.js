@@ -3,7 +3,9 @@ document.addEventListener('DOMContentLoaded', () => {
     const carList = document.getElementById('carList');
     cars = [];
     loadCarsBtn.addEventListener('click', () => {
-        fetch('http://localhost:3001/cars')
+        const API_URL = 'https://gentle-glacier-081148700.5.azurestaticapps.net/';
+        
+        fetch(`${API_URL}/api/cars`)
             .then(response => response.json())
             .then(data => {
                 cars = data;
@@ -82,13 +84,4 @@ carList.addEventListener('click', event => {
     }
 });
 
-const API_URL = 'https://gentle-glacier-081148700.5.azurestaticapps.net/';
 
-fetch(`${API_URL}/api/cars`)
-  .then(response => response.json())
-  .then(data => {
-    // Process the response data
-  })
-  .catch(error => {
-    console.error('Error:', error);
-  });
